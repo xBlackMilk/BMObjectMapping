@@ -1,0 +1,21 @@
+key_name1  :  prop_name1
+    key_name2:prop_name2
+ key_name3 :prop_name3
+ key_name4:     prop_name4
+
+unused1    :#
+ unused2:#
+ unused3 : #
+
+key_obj1  :  prop_obj@Address
+key_obj2  :  prop_obj  @Address
+ key_obj3:  prop_obj @ Address
+ key_obj4:prop_obj @Address
+ key_obj5:prop_obj@Address
+
+key_sel1    :prop_sel = [MyMapper myselector]
+ key_sel2: prop_sel = [ MyMapper myselector ]
+key_sel3:prop_sel=[ MyMapper myselector]
+key_sel4,key_sel5 : prop_sel=[ MyMapper myselector]
+key_sel6,key_sel7, : prop_sel=[ MyMapper myselector]
+key_sel6,key_sel7 : prop_sel=[ MyMapper myselector]

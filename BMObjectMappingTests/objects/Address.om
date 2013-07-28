@@ -1,0 +1,2 @@
+latitude,longitude : location = [MyMapper mapLocation]
+t1,t2 : testSel = [MyMapper map2]

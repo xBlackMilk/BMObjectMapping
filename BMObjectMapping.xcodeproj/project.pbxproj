@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D6CF264179E1FD700947292 /* NSDictionary+KeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DB2A79E3CF5269801E9A /* NSDictionary+KeyPath.m */; };
+		1D6CF265179E1FF000947292 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DAF353974F7F87D7CA3C /* NSObject+Runtime.m */; };
+		E438D09167E87EF430F3DDEA /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D008402F70F0F80D2D86 /* Student.m */; };
+		E438D11C20AA83E27E43E1EC /* BMMappingConfigParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DA73171A3776BF704EC7 /* BMMappingConfigParser.m */; };
+		E438D16BF2ADD36A3B158190 /* BMObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D84C5A7D3543931CD8F1 /* BMObjectMapping.m */; };
+		E438D357E2C2BADD9137E1DB /* Address.om in Resources */ = {isa = PBXBuildFile; fileRef = E438DC9CCE28D6CFFA617079 /* Address.om */; };
+		E438D3EC5F10418AF17ED07B /* BMObjectProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D8F7BCFF0CFB7BBCA4B2 /* BMObjectProperties.m */; };
+		E438D418BE68B18ECB3B170E /* MappingSimpleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DD1245993D26E5EFCD3F /* MappingSimpleTest.m */; };
+		E438D425A8D34C1EE885167F /* MappingDataTypeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DE30C8DF01DDD4BAF79D /* MappingDataTypeTest.m */; };
+		E438D427D77535F4F47728FF /* MappingConfigTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D4E74986A1ADB9A1A28A /* MappingConfigTest.m */; };
+		E438D4DE50BB0C229E1EF01C /* BMObjectMapping.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E438DF35996699F6DB6236F0 /* BMObjectMapping.h */; };
+		E438D5A0FA9969956DF8D0FC /* conf_without_error.om in Resources */ = {isa = PBXBuildFile; fileRef = E438D85AB717047F288BECAE /* conf_without_error.om */; };
+		E438D5F59C8C6BA92FC41E6A /* libBMObjectMapping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E438D6EEEC2E16AAB57A7823 /* libBMObjectMapping.a */; };
+		E438D5FB633B8D324EFC1F2C /* NSDictionary+KeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DB2A79E3CF5269801E9A /* NSDictionary+KeyPath.m */; };
+		E438D60BFC5545FB8662AEF8 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D977497958D3603A6B30 /* Address.m */; };
+		E438D645930D777F85E62B14 /* BMObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D7D6EEE8C281B665CF7F /* BMObjectMapper.m */; };
+		E438D657604AF518ADE79E9B /* BMSelectorMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D545C4FB60F4FA892190 /* BMSelectorMapper.m */; };
+		E438D6769EEB1AADAAC033AF /* Student.om in Resources */ = {isa = PBXBuildFile; fileRef = E438D0E9857FC56D54DD751B /* Student.om */; };
+		E438D6D85E7E6CC0FD757D6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E438D42E1133C79141DB3F52 /* Foundation.framework */; };
+		E438D783529C185DB363149F /* BMIgnoredKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D11DEAFD974F35F1AF07 /* BMIgnoredKeyMapper.m */; };
+		E438D7D56DEF85980C7881E4 /* empty.om in Resources */ = {isa = PBXBuildFile; fileRef = E438D0BA8F584CCA74A1079B /* empty.om */; };
+		E438D80BCB46391F7B380B56 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DAF353974F7F87D7CA3C /* NSObject+Runtime.m */; };
+		E438D8314C6B2DEF2DE2E1FF /* BMMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D38EB241161235B3077E /* BMMapper.m */; };
+		E438D93A17C258FA7A76F899 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E438D8A3A36296BF7DA91BDF /* InfoPlist.strings */; };
+		E438D95F837E4208BA997079 /* BMObjectMappingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D19BCE5421D8A084CAD4 /* BMObjectMappingTests.m */; };
+		E438D9F3BF9A04D56FF1E84B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E438D06EA8C699057891DA0E /* UIKit.framework */; };
+		E438DA62EA054EF47ECA5BF1 /* MappingUnderscoreKeyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DFFB25D39BB5E809D1F3 /* MappingUnderscoreKeyTest.m */; };
+		E438DBDF706A28F85C25A825 /* BMObjectProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DAB9511846778D1367D9 /* BMObjectProperty.m */; };
+		E438DC915C09582D516765E1 /* BMMappingConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DFBDF6550EB3A676029B /* BMMappingConfig.m */; };
+		E438DC9785CA459D840FC911 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E438DDC9E57CB96D605EF445 /* SenTestingKit.framework */; };
+		E438DDEFC85B2E1B8AFF145F /* BMObjectPropertyHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D3E820E18AA77DC181A6 /* BMObjectPropertyHolder.m */; };
+		E438DE194A24E3536CC5F384 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E438D5EC2103C027A41183E6 /* CoreLocation.framework */; };
+		E438DE3D1F37A7491CBB20ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E438D42E1133C79141DB3F52 /* Foundation.framework */; };
+		E438DECE307B8D9ADBDFFE2C /* MappingMapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DB5F77A5654506A72151 /* MappingMapperTest.m */; };
+		E438DF27F4425D10B8C117CD /* MyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D2B9B8BCA6AD182CB812 /* MyMapper.m */; };
+		E438DF951E26EC9A30CAED14 /* BMNameMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E438D101E4231DE847905D14 /* BMNameMapper.m */; };
+		E438DFCDE6794E2ECE6D9EC6 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = E438DF1D837C966B223F3D61 /* Teacher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E438D6279AFD8F1220DC13A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E438D9DDB8EF9A4B9F011B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E438D73D36E78795903D178D;
+			remoteInfo = BMObjectMapping;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E438D11E4B5D942D7E2E4246 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				E438D4DE50BB0C229E1EF01C /* BMObjectMapping.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E438D008402F70F0F80D2D86 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		E438D01B0B407C10B3119DE6 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		E438D05C42CE1BFD1B9A11B1 /* BMObjectPropertyHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMObjectPropertyHolder.h; sourceTree = "<group>"; };
+		E438D06EA8C699057891DA0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E438D08C4735659E36BA2A52 /* BMIgnoredKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMIgnoredKeyMapper.h; sourceTree = "<group>"; };
+		E438D0A5EFF85E716F9452A0 /* MappingMapperTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingMapperTest.h; sourceTree = "<group>"; };
+		E438D0BA8F584CCA74A1079B /* empty.om */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.om; path = empty.om; sourceTree = "<group>"; };
+		E438D0E9857FC56D54DD751B /* Student.om */ = {isa = PBXFileReference; lastKnownFileType = file.om; path = Student.om; sourceTree = "<group>"; };
+		E438D0EABDB07D148E4E99FD /* MyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapper.h; sourceTree = "<group>"; };
+		E438D0F422122D50B2DF75F5 /* MappingSimpleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingSimpleTest.h; sourceTree = "<group>"; };
+		E438D101E4231DE847905D14 /* BMNameMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNameMapper.m; sourceTree = "<group>"; };
+		E438D11DEAFD974F35F1AF07 /* BMIgnoredKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMIgnoredKeyMapper.m; sourceTree = "<group>"; };
+		E438D19BCE5421D8A084CAD4 /* BMObjectMappingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMObjectMappingTests.m; sourceTree = "<group>"; };
+		E438D1FC1ABCEE309ECD2B75 /* BMObjectProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMObjectProperties.h; sourceTree = "<group>"; };
+		E438D2B9B8BCA6AD182CB812 /* MyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapper.m; sourceTree = "<group>"; };
+		E438D2BF818A8991F9EF878D /* BMObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMObjectMapper.h; sourceTree = "<group>"; };
+		E438D312B433F87D553D26DD /* BMMappingConfigParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMMappingConfigParser.h; sourceTree = "<group>"; };
+		E438D38EB241161235B3077E /* BMMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMMapper.m; sourceTree = "<group>"; };
+		E438D3E820E18AA77DC181A6 /* BMObjectPropertyHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMObjectPropertyHolder.m; sourceTree = "<group>"; };
+		E438D42E1133C79141DB3F52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E438D479BC118F4CF2CAF5D3 /* NSDictionary+KeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KeyPath.h"; sourceTree = "<group>"; };
+		E438D47C0E19D20A5BA8D9AE /* BMMappingConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMMappingConfig.h; sourceTree = "<group>"; };
+		E438D4C1974786FE26400C4D /* BMObjectMappingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMObjectMappingTests.h; sourceTree = "<group>"; };
+		E438D4E74986A1ADB9A1A28A /* MappingConfigTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingConfigTest.m; sourceTree = "<group>"; };
+		E438D545C4FB60F4FA892190 /* BMSelectorMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSelectorMapper.m; sourceTree = "<group>"; };
+		E438D5EC2103C027A41183E6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E438D6EEEC2E16AAB57A7823 /* libBMObjectMapping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBMObjectMapping.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E438D6FC21AF132C90C26B1D /* BMNameMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNameMapper.h; sourceTree = "<group>"; };
+		E438D7A902E5F79566D9605A /* BMMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMMapper.h; sourceTree = "<group>"; };
+		E438D7D6EEE8C281B665CF7F /* BMObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMObjectMapper.m; sourceTree = "<group>"; };
+		E438D84C5A7D3543931CD8F1 /* BMObjectMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMObjectMapping.m; sourceTree = "<group>"; };
+		E438D85AB717047F288BECAE /* conf_without_error.om */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.om; path = conf_without_error.om; sourceTree = "<group>"; };
+		E438D873728327124948B7C9 /* BMObjectMappingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMObjectMappingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E438D8ACC9C862AE4B0AFDA4 /* MappingDataTypeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingDataTypeTest.h; sourceTree = "<group>"; };
+		E438D8F7BCFF0CFB7BBCA4B2 /* BMObjectProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMObjectProperties.m; sourceTree = "<group>"; };
+		E438D94EB3D2C6C483B8B648 /* BMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLog.h; sourceTree = "<group>"; };
+		E438D966C5FFA8A10F85E4DC /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		E438D97190DAC1B9C78F8E55 /* BMObjectMapping-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMObjectMapping-Prefix.pch"; sourceTree = "<group>"; };
+		E438D977497958D3603A6B30 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		E438DA26520A1E409C591339 /* BMSelectorMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSelectorMapper.h; sourceTree = "<group>"; };
+		E438DA73171A3776BF704EC7 /* BMMappingConfigParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMMappingConfigParser.m; sourceTree = "<group>"; };
+		E438DA999E182E1F8F937354 /* MappingConfigTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingConfigTest.h; sourceTree = "<group>"; };
+		E438DAB9511846778D1367D9 /* BMObjectProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMObjectProperty.m; sourceTree = "<group>"; };
+		E438DAF353974F7F87D7CA3C /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		E438DAFC9610653FD1D53333 /* BMObjectProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMObjectProperty.h; sourceTree = "<group>"; };
+		E438DB2A79E3CF5269801E9A /* NSDictionary+KeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KeyPath.m"; sourceTree = "<group>"; };
+		E438DB5F77A5654506A72151 /* MappingMapperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingMapperTest.m; sourceTree = "<group>"; };
+		E438DC4D26D8CCB8E6558841 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		E438DC6EEF3AFCEB276D8BAE /* BMObjectMappingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BMObjectMappingTests-Info.plist"; sourceTree = "<group>"; };
+		E438DC9CCE28D6CFFA617079 /* Address.om */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.om; path = Address.om; sourceTree = "<group>"; };
+		E438DCD354D87F815F240C2D /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		E438DD1245993D26E5EFCD3F /* MappingSimpleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingSimpleTest.m; sourceTree = "<group>"; };
+		E438DD31795BD6EAA5C331A7 /* MappingUnderscoreKeyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingUnderscoreKeyTest.h; sourceTree = "<group>"; };
+		E438DDC9E57CB96D605EF445 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E438DE30C8DF01DDD4BAF79D /* MappingDataTypeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingDataTypeTest.m; sourceTree = "<group>"; };
+		E438DF1D837C966B223F3D61 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		E438DF35996699F6DB6236F0 /* BMObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMObjectMapping.h; sourceTree = "<group>"; };
+		E438DF863210244E23D1EABF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E438DFBDF6550EB3A676029B /* BMMappingConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMMappingConfig.m; sourceTree = "<group>"; };
+		E438DFFB25D39BB5E809D1F3 /* MappingUnderscoreKeyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingUnderscoreKeyTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E438D11ABCD868D567DB9947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E438DE3D1F37A7491CBB20ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E438D2E697BD524D3EB1028C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E438DC9785CA459D840FC911 /* SenTestingKit.framework in Frameworks */,
+				E438D9F3BF9A04D56FF1E84B /* UIKit.framework in Frameworks */,
+				E438D6D85E7E6CC0FD757D6B /* Foundation.framework in Frameworks */,
+				E438D5F59C8C6BA92FC41E6A /* libBMObjectMapping.a in Frameworks */,
+				E438DE194A24E3536CC5F384 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E438D0C22532AFCC112A7398 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E438D97190DAC1B9C78F8E55 /* BMObjectMapping-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E438D2E37F28E3F4050CB932 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				E438DFBDF6550EB3A676029B /* BMMappingConfig.m */,
+				E438D47C0E19D20A5BA8D9AE /* BMMappingConfig.h */,
+				E438DA73171A3776BF704EC7 /* BMMappingConfigParser.m */,
+				E438D312B433F87D553D26DD /* BMMappingConfigParser.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		E438D3F2D1992A8191A688E0 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				E438D008402F70F0F80D2D86 /* Student.m */,
+				E438DCD354D87F815F240C2D /* Student.h */,
+				E438D977497958D3603A6B30 /* Address.m */,
+				E438D01B0B407C10B3119DE6 /* Address.h */,
+				E438D0BA8F584CCA74A1079B /* empty.om */,
+				E438D2B9B8BCA6AD182CB812 /* MyMapper.m */,
+				E438D0EABDB07D148E4E99FD /* MyMapper.h */,
+				E438DF1D837C966B223F3D61 /* Teacher.m */,
+				E438D966C5FFA8A10F85E4DC /* Teacher.h */,
+				E438DC9CCE28D6CFFA617079 /* Address.om */,
+				E438D0E9857FC56D54DD751B /* Student.om */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		E438D423D0E952095FDD5975 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E438D6EEEC2E16AAB57A7823 /* libBMObjectMapping.a */,
+				E438D873728327124948B7C9 /* BMObjectMappingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E438D706786DC8916FD8CDA0 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				E438D911396EF4199A5E364C /* mapper */,
+				E438D2E37F28E3F4050CB932 /* config */,
+				E438DC0352CECD7C660E58F8 /* property */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		E438D911396EF4199A5E364C /* mapper */ = {
+			isa = PBXGroup;
+			children = (
+				E438D08C4735659E36BA2A52 /* BMIgnoredKeyMapper.h */,
+				E438D11DEAFD974F35F1AF07 /* BMIgnoredKeyMapper.m */,
+				E438D6FC21AF132C90C26B1D /* BMNameMapper.h */,
+				E438D101E4231DE847905D14 /* BMNameMapper.m */,
+				E438D2BF818A8991F9EF878D /* BMObjectMapper.h */,
+				E438D7D6EEE8C281B665CF7F /* BMObjectMapper.m */,
+				E438D7A902E5F79566D9605A /* BMMapper.h */,
+				E438D38EB241161235B3077E /* BMMapper.m */,
+				E438DA26520A1E409C591339 /* BMSelectorMapper.h */,
+				E438D545C4FB60F4FA892190 /* BMSelectorMapper.m */,
+			);
+			path = mapper;
+			sourceTree = "<group>";
+		};
+		E438DB0AC7283696D2803A5C /* additions */ = {
+			isa = PBXGroup;
+			children = (
+				E438D479BC118F4CF2CAF5D3 /* NSDictionary+KeyPath.h */,
+				E438DAF353974F7F87D7CA3C /* NSObject+Runtime.m */,
+				E438DB2A79E3CF5269801E9A /* NSDictionary+KeyPath.m */,
+				E438DC4D26D8CCB8E6558841 /* NSObject+Runtime.h */,
+			);
+			path = additions;
+			sourceTree = "<group>";
+		};
+		E438DB896793E11388C87273 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E438D42E1133C79141DB3F52 /* Foundation.framework */,
+				E438DDC9E57CB96D605EF445 /* SenTestingKit.framework */,
+				E438D06EA8C699057891DA0E /* UIKit.framework */,
+				E438D5EC2103C027A41183E6 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E438DC0352CECD7C660E58F8 /* property */ = {
+			isa = PBXGroup;
+			children = (
+				E438DAB9511846778D1367D9 /* BMObjectProperty.m */,
+				E438DAFC9610653FD1D53333 /* BMObjectProperty.h */,
+				E438D8F7BCFF0CFB7BBCA4B2 /* BMObjectProperties.m */,
+				E438D1FC1ABCEE309ECD2B75 /* BMObjectProperties.h */,
+				E438D3E820E18AA77DC181A6 /* BMObjectPropertyHolder.m */,
+				E438D05C42CE1BFD1B9A11B1 /* BMObjectPropertyHolder.h */,
+			);
+			path = property;
+			sourceTree = "<group>";
+		};
+		E438DCB3052E4C7FAEE060CD /* configs */ = {
+			isa = PBXGroup;
+			children = (
+				E438D85AB717047F288BECAE /* conf_without_error.om */,
+			);
+			path = configs;
+			sourceTree = "<group>";
+		};
+		E438DDBCE9CD2CF99A6425D6 /* BMObjectMapping */ = {
+			isa = PBXGroup;
+			children = (
+				E438D0C22532AFCC112A7398 /* Supporting Files */,
+				E438DF35996699F6DB6236F0 /* BMObjectMapping.h */,
+				E438D84C5A7D3543931CD8F1 /* BMObjectMapping.m */,
+				E438D706786DC8916FD8CDA0 /* internal */,
+				E438D94EB3D2C6C483B8B648 /* BMLog.h */,
+				E438DB0AC7283696D2803A5C /* additions */,
+			);
+			path = BMObjectMapping;
+			sourceTree = "<group>";
+		};
+		E438DDC010BBEE4AE33E909F = {
+			isa = PBXGroup;
+			children = (
+				E438D423D0E952095FDD5975 /* Products */,
+				E438DB896793E11388C87273 /* Frameworks */,
+				E438DDBCE9CD2CF99A6425D6 /* BMObjectMapping */,
+				E438DF9E859944DD994A2387 /* BMObjectMappingTests */,
+			);
+			sourceTree = "<group>";
+		};
+		E438DE46AA6DD44B02A4AF13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E438DC6EEF3AFCEB276D8BAE /* BMObjectMappingTests-Info.plist */,
+				E438D8A3A36296BF7DA91BDF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E438DF9E859944DD994A2387 /* BMObjectMappingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E438DE46AA6DD44B02A4AF13 /* Supporting Files */,
+				E438D4C1974786FE26400C4D /* BMObjectMappingTests.h */,
+				E438D19BCE5421D8A084CAD4 /* BMObjectMappingTests.m */,
+				E438D3F2D1992A8191A688E0 /* objects */,
+				E438DD1245993D26E5EFCD3F /* MappingSimpleTest.m */,
+				E438D0F422122D50B2DF75F5 /* MappingSimpleTest.h */,
+				E438D4E74986A1ADB9A1A28A /* MappingConfigTest.m */,
+				E438DA999E182E1F8F937354 /* MappingConfigTest.h */,
+				E438DE30C8DF01DDD4BAF79D /* MappingDataTypeTest.m */,
+				E438D8ACC9C862AE4B0AFDA4 /* MappingDataTypeTest.h */,
+				E438DB5F77A5654506A72151 /* MappingMapperTest.m */,
+				E438D0A5EFF85E716F9452A0 /* MappingMapperTest.h */,
+				E438DFFB25D39BB5E809D1F3 /* MappingUnderscoreKeyTest.m */,
+				E438DD31795BD6EAA5C331A7 /* MappingUnderscoreKeyTest.h */,
+				E438DCB3052E4C7FAEE060CD /* configs */,
+			);
+			path = BMObjectMappingTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E438D73D36E78795903D178D /* BMObjectMapping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E438DB151D8903CA6F8584FE /* Build configuration list for PBXNativeTarget "BMObjectMapping" */;
+			buildPhases = (
+				E438D8C7A881CAFEA71FBED1 /* Sources */,
+				E438D11ABCD868D567DB9947 /* Frameworks */,
+				E438D11E4B5D942D7E2E4246 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMObjectMapping;
+			productName = BMObjectMapping;
+			productReference = E438D6EEEC2E16AAB57A7823 /* libBMObjectMapping.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E438DAB3196B7B1459E5C5F2 /* BMObjectMappingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E438DE171C258873DB854B61 /* Build configuration list for PBXNativeTarget "BMObjectMappingTests" */;
+			buildPhases = (
+				E438DE76294FEC4A69D2ED05 /* Sources */,
+				E438D2E697BD524D3EB1028C /* Frameworks */,
+				E438D9A208A25F7E8B6CFB31 /* Resources */,
+				E438DC6DED1789FD92D8011C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E438D5D38066439A09E4FC78 /* PBXTargetDependency */,
+			);
+			name = BMObjectMappingTests;
+			productName = BMObjectMappingTests;
+			productReference = E438D873728327124948B7C9 /* BMObjectMappingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E438D9DDB8EF9A4B9F011B2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = blackmilk;
+			};
+			buildConfigurationList = E438DB4C11B957E92416E2A6 /* Build configuration list for PBXProject "BMObjectMapping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E438DDC010BBEE4AE33E909F;
+			productRefGroup = E438D423D0E952095FDD5975 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E438D73D36E78795903D178D /* BMObjectMapping */,
+				E438DAB3196B7B1459E5C5F2 /* BMObjectMappingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E438D9A208A25F7E8B6CFB31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E438D93A17C258FA7A76F899 /* InfoPlist.strings in Resources */,
+				E438D7D56DEF85980C7881E4 /* empty.om in Resources */,
+				E438D5A0FA9969956DF8D0FC /* conf_without_error.om in Resources */,
+				E438D357E2C2BADD9137E1DB /* Address.om in Resources */,
+				E438D6769EEB1AADAAC033AF /* Student.om in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E438DC6DED1789FD92D8011C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E438D8C7A881CAFEA71FBED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E438D16BF2ADD36A3B158190 /* BMObjectMapping.m in Sources */,
+				E438D783529C185DB363149F /* BMIgnoredKeyMapper.m in Sources */,
+				E438DF951E26EC9A30CAED14 /* BMNameMapper.m in Sources */,
+				E438D645930D777F85E62B14 /* BMObjectMapper.m in Sources */,
+				E438D8314C6B2DEF2DE2E1FF /* BMMapper.m in Sources */,
+				E438D657604AF518ADE79E9B /* BMSelectorMapper.m in Sources */,
+				E438DC915C09582D516765E1 /* BMMappingConfig.m in Sources */,
+				E438D11C20AA83E27E43E1EC /* BMMappingConfigParser.m in Sources */,
+				E438DBDF706A28F85C25A825 /* BMObjectProperty.m in Sources */,
+				E438D3EC5F10418AF17ED07B /* BMObjectProperties.m in Sources */,
+				E438DDEFC85B2E1B8AFF145F /* BMObjectPropertyHolder.m in Sources */,
+				E438D80BCB46391F7B380B56 /* NSObject+Runtime.m in Sources */,
+				E438D5FB633B8D324EFC1F2C /* NSDictionary+KeyPath.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E438DE76294FEC4A69D2ED05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E438D95F837E4208BA997079 /* BMObjectMappingTests.m in Sources */,
+				E438D09167E87EF430F3DDEA /* Student.m in Sources */,
+				E438D60BFC5545FB8662AEF8 /* Address.m in Sources */,
+				E438D418BE68B18ECB3B170E /* MappingSimpleTest.m in Sources */,
+				E438D427D77535F4F47728FF /* MappingConfigTest.m in Sources */,
+				E438D425A8D34C1EE885167F /* MappingDataTypeTest.m in Sources */,
+				E438DECE307B8D9ADBDFFE2C /* MappingMapperTest.m in Sources */,
+				E438DA62EA054EF47ECA5BF1 /* MappingUnderscoreKeyTest.m in Sources */,
+				E438DF27F4425D10B8C117CD /* MyMapper.m in Sources */,
+				E438DFCDE6794E2ECE6D9EC6 /* Teacher.m in Sources */,
+				1D6CF264179E1FD700947292 /* NSDictionary+KeyPath.m in Sources */,
+				1D6CF265179E1FF000947292 /* NSObject+Runtime.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E438D5D38066439A09E4FC78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E438D73D36E78795903D178D /* BMObjectMapping */;
+			targetProxy = E438D6279AFD8F1220DC13A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E438D8A3A36296BF7DA91BDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E438DF863210244E23D1EABF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E438D66F2D1595510EC24A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMObjectMapping/BMObjectMapping-Prefix.pch";
+				INFOPLIST_FILE = "BMObjectMappingTests/BMObjectMappingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		E438D9BA1364AB3B10B64E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BMObjectMapping.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMObjectMapping/BMObjectMapping-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E438DA387A901A86E888BDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BMObjectMapping.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMObjectMapping/BMObjectMapping-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E438DB51FF130593AF60EB7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMObjectMapping/BMObjectMapping-Prefix.pch";
+				INFOPLIST_FILE = "BMObjectMappingTests/BMObjectMappingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E438DCC9680E99BE12080F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E438DD414702C95C9FBE6C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E438DB151D8903CA6F8584FE /* Build configuration list for PBXNativeTarget "BMObjectMapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E438DA387A901A86E888BDB9 /* Release */,
+				E438D9BA1364AB3B10B64E88 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E438DB4C11B957E92416E2A6 /* Build configuration list for PBXProject "BMObjectMapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E438DD414702C95C9FBE6C8D /* Release */,
+				E438DCC9680E99BE12080F02 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E438DE171C258873DB854B61 /* Build configuration list for PBXNativeTarget "BMObjectMappingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E438D66F2D1595510EC24A59 /* Release */,
+				E438DB51FF130593AF60EB7B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E438D9DDB8EF9A4B9F011B2A /* Project object */;
+}
