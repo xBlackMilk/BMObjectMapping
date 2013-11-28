@@ -11,8 +11,7 @@
 #define BM_LOG_LEVEL_WARN       2
 #define BM_LOG_LEVEL_ERROR      1
 
-#define BM_ENABLE_LOG
-#define BM_LOG_LEVEL    BM_LOG_LEVEL_DEBUG
+//   BM_LOG_LEVEL_DEBUG
 
 #ifdef  BM_ENABLE_LOG
 

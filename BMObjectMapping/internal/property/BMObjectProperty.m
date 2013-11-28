@@ -139,4 +139,11 @@ typedef enum {
     }
     return BM_PROPERTY_TYPE_OTHER;
 }
+
+
++ (NSString *)description {
+    return [self debugDescription];
+}
+
+
 @end

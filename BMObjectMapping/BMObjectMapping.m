@@ -14,11 +14,13 @@
 #import "BMObjectPropertyHolder.h"
 #import "BMObjectProperty.h"
 #import "BMObjectMapper.h"
+#import "BMLog.h"
 
 @implementation BMObjectMapping {
     //key: class name, value:EntityConfig
     NSMutableDictionary *_mappingConfigDic;
 
+    dispatch_queue_t _queue;
     BOOL _enableUnderScoreKey;
 }
 
@@ -27,12 +29,11 @@
 
 + (BMObjectMapping *)instance {
     static BMObjectMapping *_instance = nil;
+    static dispatch_once_t once;
 
-    @synchronized (self) {
-        if (_instance == nil) {
-            _instance = [[self alloc] init];
-        }
-    }
+    dispatch_once(&once, ^() {
+        _instance = [[self alloc] init];
+    });
 
     return _instance;
 }
@@ -42,6 +43,7 @@
     if (self) {
         self.enableUnderScoreKey = NO;
         _mappingConfigDic = [NSMutableDictionary dictionary];
+        _queue = dispatch_queue_create("objectmapping.cachequeue", DISPATCH_QUEUE_CONCURRENT);
     }
     return self;
 }
@@ -78,7 +80,7 @@
 */
 - (void)mapUsingConfigFromJson:(NSMutableDictionary *)json toTarget:(id)target {
     BMMappingConfig *config = [self configOfEntity:[target class]];
-    if (config == nil) {
+    if (config == nil || [config isKindOfClass:[NSNull class]]) {
         return;
     }
 
@@ -90,33 +92,49 @@
 }
 
 - (BMMappingConfig *)configOfEntity:(Class)cls {
-    NSString *clsName = [cls className];
-    if (![_mappingConfigDic objectForKey:clsName]) {
+    BMMappingConfig *config = [self queryConfigOfClass:cls];
+    if (config == nil) {
         [self loadConfigOfClass:cls];
+        config = [self queryConfigOfClass:cls];
     }
 
-    id config = _mappingConfigDic[clsName];
-    if ([config isKindOfClass:[BMMappingConfig class]]) {
-        return config;
-    } else {
-        return nil;
-    }
+    return config;
 }
+
+- (BMMappingConfig *)queryConfigOfClass:(Class)cls {
+    NSString *clsName = [cls className];
+    __block id result = nil;
+
+    dispatch_sync(_queue, ^() {
+        if ([_mappingConfigDic objectForKey:clsName]) {
+            result = [_mappingConfigDic objectForKey:clsName];
+        }
+    });
+
+    return result;
+}
+
 
 - (void)loadConfigOfClass:(Class)cls {
     NSString *clsName = [cls className];
-    NSBundle *myBundle = [NSBundle bundleForClass:[self class]];
-    NSString *configFilePath = [myBundle pathForResource:clsName ofType:@"om"];
-
-    if ([[NSFileManager defaultManager] fileExistsAtPath:configFilePath]) {
-        BMMappingConfig *config = [[BMMappingConfig alloc] init];
-        if ([config loadFromFile:configFilePath]) {
-            [_mappingConfigDic setObject:config forKey:clsName];
+    dispatch_barrier_async(_queue, ^() {
+        if ([_mappingConfigDic objectForKey:clsName]) {
+            return;
         }
-    } else {
-        BM_LOG_D(@"file not exist:%@", configFilePath);
-        [_mappingConfigDic setObject:[NSNull null] forKey:clsName];
-    }
+
+        NSBundle *myBundle = [NSBundle bundleForClass:[self class]];
+        NSString *configFilePath = [myBundle pathForResource:clsName ofType:@"om"];
+
+        if ([[NSFileManager defaultManager] fileExistsAtPath:configFilePath]) {
+            BMMappingConfig *config = [[BMMappingConfig alloc] init];
+            if ([config loadFromFile:configFilePath]) {
+                [_mappingConfigDic setObject:config forKey:clsName];
+            }
+        } else {
+            BM_LOG_D(@"file not exist:%@", configFilePath);
+            [_mappingConfigDic setObject:[NSNull null] forKey:clsName];
+        }
+    });
 }
 
 #pragma mark Mapping Default
@@ -127,7 +145,7 @@
     for (NSString *key in json.allKeys) {
         BMObjectProperty *property = [self getPropertyNameOfTargetClass:[target class] forKey:key];
         if (property == nil) {
-            BM_LOG_W(@"转换%@时,未能映射key:%@", [target className], key);
+            BM_LOG_W(@"转换%@时,未能映射key:%@ keys:%@", [target className], key, json.allKeys);
             continue;
         }
 

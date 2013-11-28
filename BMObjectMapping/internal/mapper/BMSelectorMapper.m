@@ -8,6 +8,7 @@
 #import "BMSelectorMapper.h"
 #import "NSObject+Runtime.h"
 #import "NSDictionary+KeyPath.h"
+#import "BMLog.h"
 
 
 @implementation BMSelectorMapper {

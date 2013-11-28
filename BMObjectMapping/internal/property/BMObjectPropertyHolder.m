@@ -8,7 +8,6 @@
 #import "BMObjectPropertyHolder.h"
 #import "BMObjectProperty.h"
 #import "BMObjectProperties.h"
-#import "NSObject+Runtime.h"
 
 
 @implementation BMObjectPropertyHolder {
@@ -32,7 +31,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _lockQueue = dispatch_queue_create([[NSString stringWithFormat:@"property_holder.%@", self] UTF8String], NULL);
+        _lockQueue = dispatch_queue_create([[NSString stringWithFormat:@"property_holder.%@", self] UTF8String], DISPATCH_QUEUE_SERIAL);
         _dicProperties = [NSMutableDictionary dictionary];
     }
 
@@ -45,12 +44,7 @@
 }
 
 - (BMObjectProperties *)propertiesOfClass:(Class)cls {
-    NSString *clsName = [cls className];
-    if ([_dicProperties objectForKey:clsName]) {
-        return [_dicProperties objectForKey:clsName];
-    } else {
-        return [self holdPropertiesOfClass:cls];
-    }
+    return [self holdPropertiesOfClass:cls];
 }
 
 #pragma mark Private

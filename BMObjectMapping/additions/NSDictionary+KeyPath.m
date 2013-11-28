@@ -6,6 +6,7 @@
 
 
 #import "NSDictionary+KeyPath.h"
+#import "BMLog.h"
 
 
 @implementation NSDictionary (KeyPath)

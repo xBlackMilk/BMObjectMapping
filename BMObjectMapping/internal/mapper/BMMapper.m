@@ -9,6 +9,7 @@
 #import "BMObjectPropertyHolder.h"
 #import "BMObjectProperty.h"
 #import "NSObject+Runtime.h"
+#import "BMLog.h"
 
 
 @implementation BMMapper {
@@ -53,7 +54,7 @@
             property.typeName);
         }
 
-        [target setValue:value forKey:self.propertyName];
+        [target setValue:convertedValue forKey:self.propertyName];
     } else {
         BM_LOG_W(@"not fount prop '%@' in %@", self.propertyName, [target className]);
     }

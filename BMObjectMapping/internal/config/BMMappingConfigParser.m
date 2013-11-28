@@ -11,6 +11,7 @@
 #import "BMObjectMapper.h"
 #import "BMIgnoredKeyMapper.h"
 #import "BMNameMapper.h"
+#import "BMLog.h"
 
 #define kSelectorConverterPattern     @"^.+:.+=\\s*\\[\\s*\\w+\\s+\\w+\\s*\\]$"
 #define kIgnoredConverterPattern      @"^.+:\\s*#$"
@@ -29,11 +30,14 @@ static NSRegularExpression *nameRegex = nil;
 + (void)initialize {
     [super initialize];
 
-    NSError *error = nil;
-    selectorRegex = [NSRegularExpression regularExpressionWithPattern:kSelectorConverterPattern options:0 error:&error];
-    ignoredRegex = [NSRegularExpression regularExpressionWithPattern:kIgnoredConverterPattern options:0 error:&error];
-    objectRegex = [NSRegularExpression regularExpressionWithPattern:kObjectConverterPattern options:0 error:&error];
-    nameRegex = [NSRegularExpression regularExpressionWithPattern:kNameConverterPattern options:0 error:&error];
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        NSError *error = nil;
+        selectorRegex = [NSRegularExpression regularExpressionWithPattern:kSelectorConverterPattern options:0 error:&error];
+        ignoredRegex = [NSRegularExpression regularExpressionWithPattern:kIgnoredConverterPattern options:0 error:&error];
+        objectRegex = [NSRegularExpression regularExpressionWithPattern:kObjectConverterPattern options:0 error:&error];
+        nameRegex = [NSRegularExpression regularExpressionWithPattern:kNameConverterPattern options:0 error:&error];
+    });
 }
 
 

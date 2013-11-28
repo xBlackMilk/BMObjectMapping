@@ -39,7 +39,7 @@
     if ([value isKindOfClass:[NSArray class]]) {
         NSArray *array = [[BMObjectMapping instance] mapFromJsonArray:value targetClass:self.targetClass];
         [self updateTarget:target withValue:array];
-    } else {
+    } else if([value isKindOfClass:[NSDictionary class]]){
         id obj = [[BMObjectMapping instance] mapFromJson:value targetClass:self.targetClass];
         [self updateTarget:target withValue:obj];
     }

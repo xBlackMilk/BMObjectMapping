@@ -8,6 +8,7 @@
 #import "BMMappingConfig.h"
 #import "BMMappingConfigParser.h"
 #import "BMMapper.h"
+#import "BMLog.h"
 
 
 @implementation BMMappingConfig {
