@@ -114,7 +114,6 @@
     return result;
 }
 
-
 - (void)loadConfigOfClass:(Class)cls {
     NSString *clsName = [cls className];
     dispatch_barrier_async(_queue, ^() {
@@ -131,7 +130,7 @@
                 [_mappingConfigDic setObject:config forKey:clsName];
             }
         } else {
-            BM_LOG_D(@"file not exist:%@", configFilePath);
+            BM_LOG_W(@"file not exist:%@", configFilePath);
             [_mappingConfigDic setObject:[NSNull null] forKey:clsName];
         }
     });

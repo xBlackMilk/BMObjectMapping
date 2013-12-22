@@ -35,7 +35,6 @@
         return;
     }
 
-
     if ([value isKindOfClass:[NSArray class]]) {
         NSArray *array = [[BMObjectMapping instance] mapFromJsonArray:value targetClass:self.targetClass];
         [self updateTarget:target withValue:array];

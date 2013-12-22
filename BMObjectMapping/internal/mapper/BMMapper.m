@@ -9,7 +9,6 @@
 #import "BMObjectPropertyHolder.h"
 #import "BMObjectProperty.h"
 #import "NSObject+Runtime.h"
-#import "BMLog.h"
 
 
 @implementation BMMapper {
